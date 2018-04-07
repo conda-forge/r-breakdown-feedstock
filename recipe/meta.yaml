@@ -1,4 +1,4 @@
-{% set version = '0.1.3' %}
+{% set version = "0.1.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/breakDown_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/breakDown/breakDown_{{ version }}.tar.gz
-  sha256: 695b659e5ab4f65342c5074d612a68c282165abde91841985e1b1ebc98e26ea7
+  sha256: 82ca18c8f14605d7bbcca9a59ae3b77976f2e0ec1744c71f9f575f2f48bb3455
 
 build:
   number: 0
