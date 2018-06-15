@@ -14,14 +14,16 @@ Summary: Break Down Plots are inspired by waterfall plots created by 'xgboostExp
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-breakdown-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-breakdown-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-breakdown-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-breakdown-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-breakdown-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-breakdown-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-breakdown-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-breakdown-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-breakdown-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-breakdown-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-breakdown-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-breakdown-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-breakdown/badges/version.svg)](https://anaconda.org/conda-forge/r-breakdown)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-breakdown/badges/downloads.svg)](https://anaconda.org/conda-forge/r-breakdown)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--breakdown-green.svg)](https://anaconda.org/conda-forge/r-breakdown) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-breakdown.svg)](https://anaconda.org/conda-forge/r-breakdown) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-breakdown.svg)](https://anaconda.org/conda-forge/r-breakdown) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-breakdown.svg)](https://anaconda.org/conda-forge/r-breakdown) |
 
 Installing r-breakdown
 ======================
