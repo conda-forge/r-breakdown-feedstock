@@ -14,9 +14,9 @@ source:
   sha256: e7e08e281d4f2eafc48639a6f166bf4bf46501069f88964de68b405433c36c8f
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,8 +44,7 @@ about:
     presents variable contributions in a concise graphical way.  This package work for
     binary classifiers and general regression models. '
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
