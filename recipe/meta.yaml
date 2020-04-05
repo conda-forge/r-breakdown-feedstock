@@ -1,4 +1,4 @@
-{% set version = '0.1.6' %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/breakDown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/breakDown/breakDown_{{ version }}.tar.gz
-  sha256: e7e08e281d4f2eafc48639a6f166bf4bf46501069f88964de68b405433c36c8f
+  sha256: 84345c3bc09b0eaf6d3c0a5ce41ca85070d1da572b87b198b391b42844388afb
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,12 +39,10 @@ test:
 about:
   home: https://pbiecek.github.io/breakDown/
   license: GPL-2
-  summary: 'Model agnostic tool for decomposition of predictions from black boxes. Break Down
-    Table shows contributions of every variable to a final prediction.  Break Down Plot
-    presents variable contributions in a concise graphical way.  This package work for
-    binary classifiers and general regression models. '
+  summary: 'Model agnostic tool for decomposition of predictions from black boxes. Break Down Table shows contributions of every variable to a final prediction.  Break
+    Down Plot presents variable contributions in a concise graphical way.  This package work for binary classifiers and general regression models. '
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
