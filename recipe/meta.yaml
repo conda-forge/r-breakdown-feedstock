@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: breakDown_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/breakDown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/breakDown/breakDown_{{ version }}.tar.gz
   sha256: 384d1fc8ccfb21c29a89dabb67d38c5bd7432019138c75beac295be67cfda9ca
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,17 +37,12 @@ test:
 
 about:
   home: https://pbiecek.github.io/breakDown/
-  license: GPL-2
+  license: GPL-2.0-only
   summary: 'Model agnostic tool for decomposition of predictions from black boxes. Break Down Table shows contributions of every variable to a final prediction.  Break Down Plot presents variable contributions in a concise graphical way.  This package work for binary classifiers and general regression models. '
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
