@@ -1,11 +1,11 @@
-About r-breakdown
-=================
+About r-breakdown-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-breakdown-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pbiecek.github.io/breakDown/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-breakdown-feedstock/blob/main/LICENSE.txt)
 
 Summary: Model agnostic tool for decomposition of predictions from black boxes. Break Down Table shows contributions of every variable to a final prediction.  Break Down Plot presents variable contributions in a concise graphical way.  This package work for binary classifiers and general regression models. 
 
