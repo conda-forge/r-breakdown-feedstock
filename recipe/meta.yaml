@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/breakDown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/breakDown/breakDown_{{ version }}.tar.gz
-  sha256: 384d1fc8ccfb21c29a89dabb67d38c5bd7432019138c75beac295be67cfda9ca
+  sha256: 9b530418211f43aeba95490f3d4fda13117c3014d458ae68c728ed3b8bc702dc
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
